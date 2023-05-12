@@ -1,2 +1,2 @@
 HOST=x.x.x.x
-PORT=xxxxx
+PORT=5000
