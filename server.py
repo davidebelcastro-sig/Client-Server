@@ -1,7 +1,7 @@
 import socket
 
 
-HOST='localhost'
+HOST='myIP'
 PORT=5000
 # Crea un socket TCP/IP
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
