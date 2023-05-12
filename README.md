@@ -6,7 +6,7 @@ The client remains active until the server closes the connection. The user can c
 
 # To Run
 
-Insert in configurazione.txt HOST and PORT of the server
+Insert in configurazione.txt HOST(IP) of the server
 Insert IP of the server in the file server.py
 Run server.py on a computer,and calcolatrice.py in other machine.
 When the user click "=" on the calculator,start the connection with server and client
