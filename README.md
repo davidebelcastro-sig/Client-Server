@@ -9,7 +9,7 @@ The client remains active until the server closes the connection. The user can c
 Insert in configurazione.txt HOST and PORT of the server
 Run server.py on a computer,and calcolatrice.py in other machine.
 When the user click "=" on the calculator,start the connection with server and client
-The file configurazione.txt must be present in both the machines.
+The file configurazione.txt must be present in machine where is the client.py/calcolatrice.py.
 
 
 # WARNING
