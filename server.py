@@ -1,7 +1,20 @@
 import socket
 
-HOST = '127.0.0.1'  # indirizzo IP del server
-PORT = 5000  # porta del server
+
+fp = open("configurazione.txt", "r")
+for riga in fp:
+    valori = riga.split("=")
+    if valori[0] == "HOST":
+        HOST = valori[1]
+        if HOST[-1] == "\n":
+            HOST = str(HOST[:-1])
+            
+    elif valori[0] == "PORT":
+        PORT = valori[1]
+        if PORT[-1] == "\n":
+            PORT = PORT[:-1]
+        PORT = int(PORT)
+fp.close()
 
 # Crea un socket TCP/IP
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
